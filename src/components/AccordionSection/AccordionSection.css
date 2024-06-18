@@ -1,0 +1,85 @@
+.accordion-container {
+    width: 279px;
+}
+
+.accordion-container-title-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 17px 0;
+}
+
+.accordion-container-title-text-styles {
+    width: 235px;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4c5f;
+}
+
+.accordion-container-title-section img {
+    width: 8px;
+    height: 4px;
+    margin-top: 5.8px;
+}
+
+.accordion-container-sub-text-styles {
+    width: 279px;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #787887;
+}
+
+.accordion-container hr {
+    margin: 18px 0 17px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .accordion-container {
+        width: 350px;
+        padding: 2px 0 0;
+    }
+
+    .accordion-container-title-text-styles {
+        width: 350px;
+        object-fit: contain;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4b4c5f;
+    }
+
+    .accordion-container-title-text-styles:hover {
+        color: #f47b56;
+        cursor: pointer;
+    }
+
+    .accordion-container-title-section img {
+        margin-top: 6.8px;
+    }
+
+    .accordion-container-sub-text-styles {
+        width: 319px;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #787887;
+        cursor: pointer;
+    }
+}

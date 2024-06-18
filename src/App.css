@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        #b068e9 ,
+        #6463e7 147%
+      );
+      background-repeat: no-repeat;
+}
+
+.body-faq-accordion-container {
+    background-color: #fff;
+    width: 327px;
+    align-self: center;
+    flex-grow: 0;
+    object-fit: contain;
+    border-radius: 23px;
+    position: relative;
+}
+
+.faq-accordion-container {
+    margin: 148px 0 85px 0;
+    padding: 132px 24px 48px;
+}
+
+.accordion-top-picture {
+    position: absolute;
+    top: -108px;
+    left: 45px;
+}
+
+.accordion-title {
+    width: 67px;
+    height: 32px;
+    margin: 0 106px 38px;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e1f36;
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    body {
+        height: 100vh;
+    }
+    
+    .body-faq-accordion-container {
+        width: 920px;
+        flex-grow: 0;
+        border-radius: 23px;
+        display: flex;
+        box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.5);
+        padding: 65px 0 83px 0;
+
+    }
+
+    .faq-accordion-container {
+        display: flex;
+        justify-content: flex-start;
+        width: 350px;
+        padding: 0;
+        margin: 0 0 0 475px;
+    }
+
+    .accordion-title {
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #1e1f36;
+        margin: 0 0 43px 0;
+    }
+}
