@@ -8,33 +8,38 @@ function App() {
   const [chosenSection, setChosenSection] = useState< number | null >(2)
 
   return (
-    <div className='body-faq-accordion-container'>
+    <div className='faq-accordion-container-second-sayer'>
 
-      <div className='faq-accordion-container'>
+      <img className='desktop-illustration-box' src={"./illustration-box-desktop.svg"} alt="" />
+      
+        <div className='body-faq-accordion-container'>
 
-        <div className='accordion-top-picture'>
-        <AccordionPicture />
+          <div className='faq-accordion-container'>
+
+              <div className='accordion-top-picture'>
+              <AccordionPicture />
+              </div>
+
+              <div className='accordion'>
+                
+              <h1 className='accordion-title'>FAQ</h1>
+
+                {accordionArr.map((item) => {
+                  return (
+                    <Fragment key={item.id}>
+                      < AccordionSection 
+                      title={item.title}
+                      subText={item.subText}
+                      id={item.id}
+                      chosenSection={chosenSection}
+                      setChosenSection={setChosenSection}
+                      />
+                    </Fragment>
+                  )
+                })}
+              </div>
+            </div>
         </div>
-        
-        <div className='accordion'>
-          
-        <h1 className='accordion-title'>FAQ</h1>
-
-          {accordionArr.map((item) => {
-            return (
-              <Fragment key={item.id}>
-                < AccordionSection 
-                title={item.title}
-                subText={item.subText}
-                id={item.id}
-                chosenSection={chosenSection}
-                setChosenSection={setChosenSection}
-                />
-              </Fragment>
-            )
-          })}
-        </div>
-      </div>
     </div>
   )
 }

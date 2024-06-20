@@ -59,6 +59,19 @@ body {
     body {
         height: 100vh;
     }
+
+    .faq-accordion-container-second-sayer {
+        position: relative;
+    }
+    .desktop-illustration-box {
+        display: flex;
+        position: absolute;
+        left: -15px;
+        top: 130px;
+        z-index: 1;
+        left: -100px;
+        top: 200px;
+    }
     
     .body-faq-accordion-container {
         width: 920px;
@@ -67,7 +80,7 @@ body {
         display: flex;
         box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.5);
         padding: 65px 0 83px 0;
-
+        overflow: hidden;
     }
 
     .faq-accordion-container {

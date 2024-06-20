@@ -54,10 +54,4 @@
         bottom: -220px;
     }
     
-    .desktop-illustration-box {
-        display: flex;
-        position: absolute;
-        left: -15px;
-        top: 130px;
-    }
 }
